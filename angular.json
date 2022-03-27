@@ -98,19 +98,6 @@
 						"extraWebpackConfig": "projects/mfe1/webpack.config.js"
 					}
 				},
-				"lint": {
-					"builder": "@angular-devkit/build-angular:tslint",
-					"options": {
-						"tsConfig": [
-							"projects/mfe1/tsconfig.app.json",
-							"projects/mfe1/tsconfig.spec.json",
-							"projects/mfe1/e2e/tsconfig.json"
-						],
-						"exclude": [
-							"**/node_modules/**"
-						]
-					}
-				},
 				"e2e": {
 					"builder": "@angular-devkit/build-angular:protractor",
 					"options": {
@@ -218,19 +205,6 @@
 						"extraWebpackConfig": "projects/shell/webpack.config.js"
 					}
 				},
-				"lint": {
-					"builder": "@angular-devkit/build-angular:tslint",
-					"options": {
-						"tsConfig": [
-							"projects/shell/tsconfig.app.json",
-							"projects/shell/tsconfig.spec.json",
-							"projects/shell/e2e/tsconfig.json"
-						],
-						"exclude": [
-							"**/node_modules/**"
-						]
-					}
-				},
 				"e2e": {
 					"builder": "@angular-devkit/build-angular:protractor",
 					"options": {
@@ -270,18 +244,6 @@
 						"tsConfig": "projects/auth-lib/tsconfig.spec.json",
 						"karmaConfig": "projects/auth-lib/karma.conf.js"
 					}
-				},
-				"lint": {
-					"builder": "@angular-devkit/build-angular:tslint",
-					"options": {
-						"tsConfig": [
-							"projects/auth-lib/tsconfig.lib.json",
-							"projects/auth-lib/tsconfig.spec.json"
-						],
-						"exclude": [
-							"**/node_modules/**"
-						]
-					}
 				}
 			}
 		},
@@ -309,18 +271,6 @@
 						"main": "projects/shared-lib/src/test.ts",
 						"tsConfig": "projects/shared-lib/tsconfig.spec.json",
 						"karmaConfig": "projects/shared-lib/karma.conf.js"
-					}
-				},
-				"lint": {
-					"builder": "@angular-devkit/build-angular:tslint",
-					"options": {
-						"tsConfig": [
-							"projects/shared-lib/tsconfig.lib.json",
-							"projects/shared-lib/tsconfig.spec.json"
-						],
-						"exclude": [
-							"**/node_modules/**"
-						]
 					}
 				}
 			}

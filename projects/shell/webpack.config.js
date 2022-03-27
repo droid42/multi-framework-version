@@ -11,11 +11,11 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "shell",
-    publicPath: "auto"
+    publicPath: ""
   },
   optimization: {
     runtimeChunk: false
-  },    
+  },
   resolve: {
     alias: {
       ...sharedMappings.getAliases(),
@@ -33,7 +33,7 @@ module.exports = {
         "@angular/core": { requiredVersion: '12.0.0' },
         "@angular/common": { requiredVersion: '12.0.0' },
         "@angular/router": { requiredVersion: '12.0.0' },
-        "@angular/common/http": { requiredVersion: '12.0.0' }, 
+        "@angular/common/http": { requiredVersion: '12.0.0' },
 
         // Uncomment for sharing lib of an Angular CLI or Nx workspace
         ...sharedMappings.getDescriptors()
